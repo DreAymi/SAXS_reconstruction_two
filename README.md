@@ -21,7 +21,7 @@ Do the following steps in sequence.
 
 5. Run auto_encoder.py in directory "train_autoencoder", to train autoencoder network. The well-trained model will be saved in directory "train_autoencoder/model"
 
-6. Run function run_iq() in generate_data.py. This step will compute all the pisa pdb in directory "samermax_pisa_pdb". And save all the iq data in directory "pisa_data_iq"
+6. Run function run_iq() in generate_data.py. This step will compute the iq profile of all the pisa pdb in directory "samermax_pisa_pdb". And save all the iq data in directory "pisa_data_iq"
 
 7. Run function generate_gene() in generate_data.py. This step will get the latend vector of all the pisa pdb in well-trained autoencoder model. And save the results in directory "pisa_data_gene".
 
@@ -30,6 +30,9 @@ Do the following steps in sequence.
 9. Run train_iq_z.py in directory "train_iq2gene", to train iq2gene network. The well-trained model will be saved in directory "train_iq2gene/model".
 
 10. Run main_iq2z.py in directory "test_run", to do reconstruction test.
+
+What's more
+You can run get_pr.py to compute the pr profile(instead of iq profile) of all the pisa pdb in directory "samermax_pisa_pdb". Then use pr data to train iq2gene network.
 
 
 
